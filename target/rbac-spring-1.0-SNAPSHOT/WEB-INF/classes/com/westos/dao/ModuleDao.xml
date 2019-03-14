@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.westos.dao.ModuleDao">
+    <select id="findAll" resultMap="b">
+        select a.*, b.id bid, b.name bname, b.pid bpid, b.code bcode
+          from rbac.rbac_module a inner join rbac.rbac_module b on a.id = b.pid
+    </select>
+    <resultMap id="b" type="com.westos.domain.Module" autoMapping="true">
+        <id column="id" property="id"/>
+        <collection property="children" ofType="com.westos.domain.Module">
+            <id column="bid" property="id"/>
+            <result column="bname" property="name"/>
+            <result column="bpid" property="pid"/>
+            <result column="bcode" property="code"/>
+        </collection>
+    </resultMap>
+
+
+    <!--<select id="findAll" resultMap="b">-->
+        <!--select id,name,pid,code from rbac.rbac_module where pid=0-->
+    <!--</select>-->
+
+    <!--<resultMap id="b" type="domain.Module">-->
+    <!--<id column="id" property="id"/>-->
+    <!--<result column="name" property="name"/>-->
+    <!--<result column="pid" property="pid"/>-->
+    <!--<result column="code" property="code"/>-->
+     <!--<collection property="children" select="findModule2" column="id"/>-->
+    <!--</resultMap>-->
+
+    <!--<select id="findModule2" parameterType="int" resultType="domain.Module">-->
+        <!--select id,name,pid,code from rbac.rbac_module where pid = #{pid}-->
+    <!--</select>-->
+
+</mapper>
