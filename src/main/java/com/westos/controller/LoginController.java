@@ -37,17 +37,17 @@ public class LoginController {
     @RequestMapping("/login")
     public  String login(String username, String password , Model model , HttpSession session){
         if(username==null){
-            return "redirect:/login.jsp?erroe=1";
+            return "redirect:/login.jsp?error=1";
         }
         if(password==null){
-            return "redirect:/login.jsp?erroe=1";
+            return "redirect:/login.jsp?error=1";
         }
         User user = userService.findByUsername(username);
         if(user == null) {
-            return "redirect:/login.jsp?erroe=1";
+            return "redirect:/login.jsp?error=1";
     }
         if(!user.getPassword().equals(Md5Util.md5(password))){
-            return "redirect:/login.jsp?erroe=1";
+            return "redirect:/login.jsp?error=1";
         }
 
         session.setAttribute("user", user);
