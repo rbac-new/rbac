@@ -74,26 +74,6 @@ public class UserController {
        return "redirect:/system/user/page";
     }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     @RequestMapping("/system/user/tomodifyrole")
     public  String toModifyRole(int userId, Model model){
         List<Role> roles = roleService.findAll();

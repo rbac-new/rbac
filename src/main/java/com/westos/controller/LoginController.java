@@ -1,6 +1,5 @@
 package com.westos.controller;
 
-import com.sun.xml.internal.ws.runtime.config.TubelineFeatureReader;
 import com.westos.domain.User;
 import com.westos.service.UserService;
 import com.westos.util.Md5Util;
@@ -15,7 +14,6 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 import javax.imageio.ImageIO;
-import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 import java.io.IOException;
