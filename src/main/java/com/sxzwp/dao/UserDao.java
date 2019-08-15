@@ -2,12 +2,12 @@ package com.sxzwp.dao;
 
 import com.sxzwp.domain.User;
 import org.apache.ibatis.annotations.*;
+import org.springframework.stereotype.Component;
 
 import java.util.List;
 
-/**
- * @author yihang
- */
+@Mapper
+@Component
 public interface UserDao {
 
     /**

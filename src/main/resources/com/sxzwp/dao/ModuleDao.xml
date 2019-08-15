@@ -17,21 +17,4 @@
         </collection>
     </resultMap>
 
-
-    <!--<select id="findAll" resultMap="b">-->
-        <!--select id,name,pid,code from rbac.rbac_module where pid=0-->
-    <!--</select>-->
-
-    <!--<resultMap id="b" type="domain.Module">-->
-    <!--<id column="id" property="id"/>-->
-    <!--<result column="name" property="name"/>-->
-    <!--<result column="pid" property="pid"/>-->
-    <!--<result column="code" property="code"/>-->
-     <!--<collection property="children" select="findModule2" column="id"/>-->
-    <!--</resultMap>-->
-
-    <!--<select id="findModule2" parameterType="int" resultType="domain.Module">-->
-        <!--select id,name,pid,code from rbac.rbac_module where pid = #{pid}-->
-    <!--</select>-->
-
 </mapper>

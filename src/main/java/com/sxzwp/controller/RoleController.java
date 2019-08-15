@@ -57,8 +57,6 @@ public class RoleController {
         User user = (User)session.getAttribute("user");
         userUtils.setAttributeModuleDao(session, user.getId());
         return "redirect:/system/role/all";
-
-
     }
 
 }

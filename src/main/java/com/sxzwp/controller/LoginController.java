@@ -1,6 +1,5 @@
 package com.sxzwp.controller;
 
-import com.sun.xml.internal.ws.runtime.config.TubelineFeatureReader;
 import com.sxzwp.domain.User;
 import com.sxzwp.service.UserService;
 import com.sxzwp.util.Md5Util;
@@ -35,6 +34,7 @@ public class LoginController {
     //登录
     @RequestMapping("/login")
     public  String login(String username, String password , Model model , HttpSession session){
+        System.out.println("/login");
         if(username==null){
             return "redirect:/login.jsp?error=1";
         }

@@ -5,11 +5,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Objects;
 
-/**
- * 模块(权限)类
- *
- * @author yihang
- */
+
 @SuppressWarnings("serial")
 public class Module implements Serializable {
     /**

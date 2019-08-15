@@ -1,16 +1,14 @@
 package com.sxzwp.dao;
 
 import com.sxzwp.domain.Role;
-import org.apache.ibatis.annotations.Delete;
-import org.apache.ibatis.annotations.Insert;
-import org.apache.ibatis.annotations.Param;
-import org.apache.ibatis.annotations.Select;
+import org.apache.ibatis.annotations.*;
+import org.springframework.stereotype.Component;
 
 import java.util.List;
 
-/**
- * @author yihang
- */
+
+@Mapper
+
 public interface RoleDao {
 
     /**

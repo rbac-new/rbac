@@ -1,13 +1,15 @@
 package com.sxzwp.dao;
 
 import com.sxzwp.domain.Module;
+import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Select;
+import org.springframework.stereotype.Component;
 
 import java.util.List;
 
-/**
- * @author yihang
- */
+
+@Mapper
+
 public interface ModuleDao {
 
     /**
