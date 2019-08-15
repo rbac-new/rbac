@@ -32,15 +32,7 @@
       <div class="jumbotron">
         <h1>订单查询管理</h1>
         
-        <div class="btn-toolbar mb-3" role="toolbar" aria-label="Toolbar with button groups">
-		  <div class="btn-group mr-2" role="group" aria-label="First group">
-		    <a class="input-group-addon btn btn-primary" href="/order/search/findAll" role="button">查询所有</a>
-		  </div>
-		  <div class="input-group">		    
-		    <input type="text" name="customerId" class="form-control" placeholder="请输入顾客id" aria-label="Input group example" aria-describedby="btnGroupAddon" required>
-		    <a class="input-group-addon btn btn-primary" href="/order/search/findBy" role="button" id="findBy">查询</a>	    
-		  </div>
-		</div>
+
       </div>
       
       <c:if test="${error!=null}">
