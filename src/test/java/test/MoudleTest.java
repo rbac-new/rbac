@@ -1,9 +1,8 @@
 package test;
 
-import com.westos.dao.ModuleDao;
-import com.westos.domain.Module;
-import com.westos.service.ModuleService;
-import com.westos.service.impl.ModuleServiceImpl;
+import com.sxzwp.dao.ModuleDao;
+import com.sxzwp.domain.Module;
+import com.sxzwp.service.impl.ModuleServiceImpl;
 import org.junit.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 

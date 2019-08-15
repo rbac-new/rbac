@@ -1,9 +1,8 @@
 package test;
 
-import com.westos.domain.Module;
-import com.westos.domain.Role;
-import com.westos.service.RoleService;
-import com.westos.service.impl.RoleServiceImpl;
+import com.sxzwp.domain.Module;
+import com.sxzwp.domain.Role;
+import com.sxzwp.service.impl.RoleServiceImpl;
 import org.junit.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 
