@@ -14,9 +14,9 @@
    <!-- 1. 配置连接池 -->
     <bean id="dataSource" class="com.zaxxer.hikari.HikariDataSource">
         <property name="driverClassName" value="com.mysql.jdbc.Driver"/>
-        <property name="jdbcUrl" value="jdbc:mysql://localhost:3306/rbac?useSSL=false"/>
-        <property name="username" value="root"/>
-        <property name="password" value=""/>
+        <property name="jdbcUrl" value="jdbc:mysql://66.42.117.2:3306/rbac?useSSL=false"/>
+        <property name="username" value="rbac"/>
+        <property name="password" value="rbac"/>
         <property name="maximumPoolSize" value="10"/>
         <property name="minimumIdle" value="2"/>
     </bean>
