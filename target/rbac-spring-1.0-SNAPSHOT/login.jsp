@@ -1,5 +1,5 @@
 <%@ page language="java" contentType="text/html; charset=utf-8"
-         pageEncoding="utf-8"%>
+         pageEncoding="utf-8" %>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <!DOCTYPE html>
 <html>
@@ -28,13 +28,16 @@
             padding: 15px;
             margin: 0 auto;
         }
+
         .form-signin .form-signin-heading,
         .form-signin .checkbox {
             margin-bottom: 10px;
         }
+
         .form-signin .checkbox {
             font-weight: normal;
         }
+
         .form-signin .form-control {
             position: relative;
             height: auto;
@@ -43,42 +46,51 @@
             padding: 10px;
             font-size: 16px;
         }
+
         .form-signin .form-control:focus {
             z-index: 2;
         }
+
         .form-signin input[type="text"] {
             margin-bottom: -1px;
             border-bottom-right-radius: 0;
             border-bottom-left-radius: 0;
         }
+
         .form-signin input[type="password"] {
             margin-bottom: 10px;
             border-top-left-radius: 0;
             border-top-right-radius: 0;
         }
-        #image1 {margin-top:32px; border: #0c5460 1px solid}
+
+        #image1 {
+            margin-top: 32px;
+            border: #0c5460 1px solid
+        }
     </style>
     <script>
-        var t=false;
+        var t = false;
+
         function changeImage() {
-            document.getElementById("image1").src  = "/captcha?t="+new Date().getTime();
+            document.getElementById("image1").src = "/captcha?t=" + new Date().getTime();
         }
+
         function verify() {
             var v = document.getElementById("aaa").value;
             var xhr = new XMLHttpRequest();
-            xhr.onload = function() {
+            xhr.onload = function () {
                 // x 是结果 取值 true | false
                 var x = JSON.parse(xhr.responseText);
-                if(x) {
-                    document.getElementById("error").innerText="验证成功";
-                    t= true;
+                if (x) {
+                    document.getElementById("error").innerText = "验证成功";
+                    t = true;
 
                 } else {
-                    document.getElementById("error").innerText="验证失败";
-                  t=false;
+                    document.getElementById("error").innerText = "验证失败";
+                    t = false;
                 }
             };
-            xhr.open("get","/checkCaptcha?captcha="+v, true);
+            xhr.open("get", "/checkCaptcha?captcha=" + v, true);
             xhr.send();
         }
     </script>
@@ -92,19 +104,22 @@
         <div class="form-row">
             <div class="col-md-12">
                 <label for="username">用户名</label>
-                <input type="text" class="form-control is-valid" id="username" name="username" placeholder="请输入用户名" value="admin" required>
+                <input type="text" class="form-control is-valid" id="username" name="username" placeholder="请输入用户名"
+                       value="admin" required>
             </div>
         </div>
         <div class="form-row">
             <div class="col-md-12">
                 <label for="password">密码</label>
-                <input type="password" class="form-control is-valid" id="password" name="password" placeholder="请输入密码" value="admin" required>
+                <input type="password" class="form-control is-valid" id="password" name="password" placeholder="请输入密码"
+                       value="123" required>
             </div>
         </div>
         <div class="form-row">
             <div class="col-md-4">
                 <label for="password">验证码</label>
-                <input type="text" id="aaa" name="captcha" class="form-control is-valid" placeholder="验证码" onkeyup="verify()">
+                <input type="text" id="aaa" name="captcha" class="form-control is-valid" placeholder="验证码"
+                       onkeyup="verify()">
                 <div id="error" class="valid-feedback"></div>
             </div>
             <div class="col-md-4">
@@ -125,9 +140,12 @@
             </div>
         </c:if>
     </form>
-    <div >
-
-
+    <div>
+        <center>
+            <p>
+                管理员用户名：admin 管理员密码：admin
+            </p>
+        </center>
     </div>
 
 </div> <!-- /container -->
