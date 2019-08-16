@@ -29,6 +29,11 @@
     <%@include file="/jsp/nav.jsp" %>
 
     <div class="container">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="/index.jsp">首页</a></li>
+        <li class="breadcrumb-item">系统管理</li>
+        <li class="breadcrumb-item active">短信设置</li>
+      </ol>
       <div class="jumbotron">
         <h1>短信设置</h1>
       </div>

@@ -29,6 +29,11 @@
     <%@include file="/jsp/nav.jsp" %>
 
     <div class="container">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="/index.jsp">首页</a></li>
+            <li class="breadcrumb-item">订单管理</li>
+            <li class="breadcrumb-item active">查询订单</li>
+        </ol>
       <div class="jumbotron">
         <h1>订单查询管理</h1>
         

@@ -20,13 +20,12 @@ public class Interceptor1 implements HandlerInterceptor {
     // 在控制器方法执行前被调用, 返回 true 放行请求， 如果返回 false 拦截请求（不会前进了）
     @Override
     public boolean preHandle(HttpServletRequest req, HttpServletResponse resp, Object handler) throws Exception {
-        String addr = req.getRemoteAddr();
-        if(!addr.equals("0:0:0:0:0:0:0:1")){
-            resp.sendRedirect( "/filter.jsp");
-            System.out.println("1111111");
-            return false;
-        }
-
+//        String addr = req.getRemoteAddr();
+//        if(!addr.equals("0:0:0:0:0:0:0:1")){
+//            resp.sendRedirect( "/filter.jsp");
+//            System.out.println("1111111");
+//            return false;
+//        }
 
         Object user = req.getSession().getAttribute("user");
         if (user == null) {
@@ -45,7 +44,7 @@ public class Interceptor1 implements HandlerInterceptor {
                 }
             }
         }
-        System.out.println("-------------------------------");
+
         String requestURI = req.getRequestURI();
         System.out.println(requestURI);
         System.out.println(list);
@@ -54,7 +53,7 @@ public class Interceptor1 implements HandlerInterceptor {
             System.out.println("放行");
             return true;
         }else {
-            System.out.println("拒绝访问");
+
             resp.sendRedirect("/index.jsp");
             return false;
         }
