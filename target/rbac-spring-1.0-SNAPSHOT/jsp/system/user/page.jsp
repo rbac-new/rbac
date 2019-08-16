@@ -21,13 +21,15 @@
             min-height: 75rem;
             padding-top: 4.5rem;
         }
-         tr:nth-of-type(odd){
+
+        tr:nth-of-type(odd) {
             background-color: #7EC4CC;
-             color: blue;
+            color: blue;
         }
-         tr:nth-of-type(even){
+
+        tr:nth-of-type(even) {
             background-color: papayawhip;
-             color: red;
+            color: red;
         }
 
     </style>
@@ -39,7 +41,7 @@
 
 <div class="container">
     <ol class="breadcrumb">
-        <li class="breadcrumb-item"><a href="/index">首页</a></li>
+        <li class="breadcrumb-item"><a href="/index.jsp">首页</a></li>
         <li class="breadcrumb-item">系统管理</li>
         <li class="breadcrumb-item active">用户管理</li>
     </ol>
@@ -54,7 +56,7 @@
                     <th>编号</th>
                     <th>登录名</th>
                     <th>用户角色</th>
-                    <th>数据权限</th>
+
                     <th>修改</th>
                     <th>删除</th>
                 </tr>
@@ -62,12 +64,12 @@
                 <tbody>
                 <c:forEach items="${list}" var="user">
                     <tr id="1">
-                    <td>${user.id}</td>
-                    <td>${user.username}</td>
-                    <td><a href="/system/user/tomodifyrole?userId=${user.id}">编辑角色</a></td>
-                    <td><a href="">数据权限</a></td>
-                    <td><a href="/system/user/toupdate?id=${user.id}">修改</a></td>
-                    <td><a href="/system/user/delete?id=${user.id}">删除</a></td>
+                        <td>${user.id}</td>
+                        <td>${user.username}</td>
+                        <td><a href="/system/user/tomodifyrole?userId=${user.id}">编辑角色</a></td>
+
+                        <td><a href="/system/user/toupdate?id=${user.id}">修改</a></td>
+                        <td><a href="/system/user/delete?id=${user.id}">删除</a></td>
                     </tr>
                 </c:forEach>
                 </tbody>
@@ -98,7 +100,8 @@
                         <li class="page-item "><a class="page-link" href="javascript:void(0)"> >></a></li>
                     </c:if>
                     <c:if test="${total!=page}">
-                        <li class="page-item "><a class="page-link" href="/system/user/page?page=${page+1}"> >> </a></li>
+                        <li class="page-item "><a class="page-link" href="/system/user/page?page=${page+1}"> >> </a>
+                        </li>
                     </c:if>
                     <%--<li class="page-item "><a class="page-link" href="javascript:void(0)">1</a></li>--%>
                     <%--<li class="page-item"><a class="page-link" href="/system/user/page?page=2">2</a></li>--%>

@@ -30,8 +30,28 @@
 <div class="container">
     <div class="jumbotron">
         <h1>首页</h1>
-        <p class="lead">This example is a quick exercise to illustrate how fixed to top navbar works. As you scroll, it will remain fixed to the top of your browser's viewport.</p>
-        <a class="btn btn-lg btn-primary" href="../../components/navbar/" role="button">View navbar docs &raquo;</a>
+        <p class="lead">一个基于角色的权限管理.
+        </p>
+        <p>
+            1.模块整体主要使用了RBAC的思想；
+        </p>
+        <p>
+            2.用户表，角色表，权限表，它们之间都是多对多关系,用中间表体现多对多关系；
+        </p>
+        <p>
+            3.分层实现控制层、业务逻辑层、数据访问层，每一层之间，通过接口来调用, 来降低层与层耦合度；
+        </p>
+        <p>
+            4.其中查询权限方法，页面上需要以多级结构展示权限, 需要如何建立多级权限之间的关系；
+        </p>
+        <p>
+            5.维护中间表 - 修改用户角色, 先删除旧的，再插入新的，为了保证原子性，需要用事务控制；
+        </p>
+        <p>
+            6.项目中用到的框架、技术 springmvc-spring-mybatis
+        </p>
+
+
     </div>
 </div>
 

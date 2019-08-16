@@ -98,7 +98,7 @@
         <div class="form-row">
             <div class="col-md-12">
                 <label for="password">密码</label>
-                <input type="password" class="form-control is-valid" id="password" name="password" placeholder="请输入密码" value="123" required>
+                <input type="password" class="form-control is-valid" id="password" name="password" placeholder="请输入密码" value="admin" required>
             </div>
         </div>
         <div class="form-row">
@@ -125,6 +125,10 @@
             </div>
         </c:if>
     </form>
+    <div >
+
+
+    </div>
 
 </div> <!-- /container -->
 
