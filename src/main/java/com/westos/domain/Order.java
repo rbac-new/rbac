@@ -1,10 +1,6 @@
 package com.westos.domain;
 
-/**
- * 订单类
- *
- * @author yihang
- */
+
 public class Order {
     /**
      * 订单编号

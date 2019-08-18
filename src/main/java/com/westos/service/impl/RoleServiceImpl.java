@@ -10,9 +10,7 @@ import org.springframework.stereotype.Service;
 import java.util.List;
 @Service
 public class RoleServiceImpl implements RoleService {
-//    ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext("spring.xml");
-//   RoleDao roleDao =context.getBean(RoleDao.class);
-//    ModuleDao moduleDao = context.getBean(ModuleDao.class);
+
     @Autowired
     ModuleDao moduleDao;
     @Autowired

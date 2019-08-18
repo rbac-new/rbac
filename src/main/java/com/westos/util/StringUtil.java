@@ -3,9 +3,7 @@ package com.westos.util;
 import java.util.Arrays;
 import java.util.List;
 
-/**
- * @author yihang
- */
+
 public class StringUtil {
 
     /**

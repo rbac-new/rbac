@@ -5,9 +5,7 @@ import org.apache.ibatis.annotations.*;
 
 import java.util.List;
 
-/**
- * @author yihang
- */
+
 public interface UserDao {
 
     /**

@@ -10,7 +10,7 @@
     <meta name="author" content="">
     <link rel="icon" href="/img/favicon.ico">
 
-    <title>Fixed top navbar example for Bootstrap</title>
+    <title>修改模块</title>
 
     <!-- Bootstrap core CSS -->
     <link href="/css/bootstrap.min.css" rel="stylesheet">

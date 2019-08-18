@@ -4,9 +4,6 @@ import com.westos.domain.Role;
 
 import java.util.List;
 
-/**
- * @author yihang
- */
 public interface RoleService {
     /**
      * 查询所有角色

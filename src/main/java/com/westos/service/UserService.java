@@ -5,9 +5,6 @@ import com.westos.domain.User;
 
 import java.util.List;
 
-/**
- * @author yihang
- */
 public interface UserService {
     /**
      * 根据用户名查询用户对象（连同用户的角色、能够操作的模块、组织机构）

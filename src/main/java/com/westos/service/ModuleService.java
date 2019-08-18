@@ -5,9 +5,7 @@ import com.westos.domain.Module;
 
 import java.util.List;
 
-/**
- * @author yihang
- */
+
 public interface ModuleService {
 
     /**

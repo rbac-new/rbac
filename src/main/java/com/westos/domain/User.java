@@ -3,11 +3,6 @@ package com.westos.domain;
 import java.io.Serializable;
 import java.util.*;
 
-/**
- * 用户类
- *
- * @author yihang
- */
 @SuppressWarnings("serial")
 public class User implements Serializable {
     /**

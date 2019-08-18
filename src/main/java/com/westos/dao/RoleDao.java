@@ -8,9 +8,6 @@ import org.apache.ibatis.annotations.Select;
 
 import java.util.List;
 
-/**
- * @author yihang
- */
 public interface RoleDao {
 
     /**

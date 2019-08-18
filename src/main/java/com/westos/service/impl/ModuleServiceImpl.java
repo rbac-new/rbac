@@ -13,8 +13,6 @@ import java.util.List;
 @Service
 public class ModuleServiceImpl implements ModuleService {
 
-//        ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext("spring.xml");
-//        ModuleDao moduleDao = context.getBean(ModuleDao.class);
     @Autowired
    ModuleDao moduleDao;
     @Override

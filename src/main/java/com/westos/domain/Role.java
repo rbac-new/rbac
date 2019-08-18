@@ -4,10 +4,6 @@ import java.io.Serializable;
 import java.util.List;
 import java.util.Objects;
 
-/**
- * 角色类
- * @author yihang
- */
 @SuppressWarnings("serial")
 public class Role implements Serializable {
     /**

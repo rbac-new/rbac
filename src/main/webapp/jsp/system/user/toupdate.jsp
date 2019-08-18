@@ -10,7 +10,7 @@
     <meta name="author" content="">
     <link rel="icon" href="/img/favicon.ico">
 
-    <title>Fixed top navbar example for Bootstrap</title>
+    <title>用户修改</title>
 
     <!-- Bootstrap core CSS -->
     <link href="/css/bootstrap.min.css" rel="stylesheet">
@@ -28,7 +28,7 @@
 <%@include file="/jsp/nav.jsp" %>
 <div class="container">
     <ol class="breadcrumb">
-        <li class="breadcrumb-item"><a href="/index">首页</a></li>
+        <li class="breadcrumb-item"><a href="/index.jsp">首页</a></li>
         <li class="breadcrumb-item">系统管理</li>
         <li class="breadcrumb-item active">用户修改</li>
     </ol>
